@@ -116,8 +116,11 @@ public class Main {
                 break;
             case "/":
                 if (num2 != 0) {
-                    res = num1 / num2;
-                    System.out.printf("Результатом выражения %d / %d, является --> %d", num1, num2, res);
+                    double a = Integer.valueOf(num1);
+                    double b = Integer.valueOf(num2);
+                    double c;
+                    c = a / b;
+                    System.out.printf("Результатом выражения %d / %d, является --> %d", a, b, c);
                     break;
                 } else {
                     System.out.print("Делить на 0 нельзя.");
@@ -127,7 +130,7 @@ public class Main {
                 double b = Integer.valueOf(num2);
                 double c;
                 c = Math.pow(a, b);
-                System.out.printf("Результатом выражения %d ** %d, является --> %.1f", num1, num2, c);
+                System.out.printf("Результатом выражения %d ** %d, является --> %.1f", a, b, c);
                 break;
             default:
                 System.out.println("\nТакой операции нет.");
